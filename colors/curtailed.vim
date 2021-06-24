@@ -78,15 +78,15 @@ endfunction
 
 " light
 let s:l0 = '#f5e7cf'
-let s:l1 = '#e8dbc4'
-let s:l2 = '#c1b6a2'
+let s:l1 = '#e2d5bf'
+let s:l2 = '#c1b5a2'
 
 " gray
 let s:g0 = '#8d8375'
 
 " dark
 let s:d2 = '#595148'
-let s:d1 = '#322c26'
+let s:d1 = '#3f3831'
 let s:d0 = '#241f1a'
 
 " color
