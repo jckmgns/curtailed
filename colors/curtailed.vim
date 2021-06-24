@@ -152,8 +152,8 @@ call s:Hl('VertSplit', s:fg1, s:bg0)
 " Navigation: {{{
 
 call s:Hl('Directory', s:co4, s:bg0)
-call s:Hl('Search', s:bg0, s:fg0)
-call s:Hl('IncSearch', s:bg0, s:fg0, 'bold')
+call s:Hl('Search', s:fg0, s:bg2)
+call s:Hl('IncSearch', s:bg2, s:fg0, 'bold')
 
 " }}}
 " Prompt: {{{
