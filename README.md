@@ -22,7 +22,7 @@ colorscheme curtailed   " set the colorscheme to curtailed
 --- 
 
 Note that you may have to add the following snippet to your vimrc if no colors
-are displayed in Vim, even if your terminal simulator supports 24-bit color:
+are displayed, even if your terminal emulator supports 24-bit color:
 
 ```
 execute "set t_8f=\e[38;2;%lu;%lu;%lum"
