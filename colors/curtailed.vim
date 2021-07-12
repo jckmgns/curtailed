@@ -256,6 +256,19 @@ call s:Hl('SpellLocal', s:none, s:none, 'undercurl', s:co4)
 call s:Hl('SpellRare', s:none, s:none, 'undercurl', s:co4)
 
 " }}}
+" Neovim: {{{
+
+call s:Hl('RedrawDebugNormal', s:bg0, s:fg0)
+call s:Hl('RedrawDebugClear', s:bg0, s:co2)
+call s:Hl('RedrawDebugComposed', s:bg0, s:co1)
+call s:Hl('RedrawDebugRecompose', s:bg0, s:co0)
+
+call s:Li('NvimFigureBrace', 'Error')
+call s:Li('NvimInternalError', 'Error')
+call s:Li('NvimInvalidSingleQuotedUnknownEscape', 'Error')
+call s:Li('NvimSingleQuotedUnknownEscape', 'Error')
+
+" }}}
 
 " Plugin definitions
 " --------------------------------
