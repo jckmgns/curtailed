@@ -174,7 +174,7 @@ call s:Hl('Visual', s:none, s:bg1)
 call s:Hl('VisualNOS', s:none, s:bg1)
 call s:Hl('NonText', s:bg1, s:bg0)
 
-call s:Hl('Todo', s:fg0, s:none, 'bold,italic')
+call s:Hl('Todo', s:fg0, s:none, 'bold')
 call s:Hl('Underlined', s:co4, s:none, 'underline')
 call s:Hl('Error', s:bg0, s:co0, 'bold')
 call s:Hl('ErrorMsg', s:bg0, s:co0, 'bold')
@@ -251,7 +251,7 @@ call s:Hl('PmenuThumb', s:none, s:bg2)
 " Spelling: {{{
 
 call s:Hl('SpellBad', s:none, s:none, 'undercurl', s:co0)
-call s:Hl('SpellCap', s:co1, s:none, 'bold,italic')
+call s:Hl('SpellCap', s:co1, s:none, 'bold')
 call s:Hl('SpellLocal', s:none, s:none, 'undercurl', s:co4)
 call s:Hl('SpellRare', s:none, s:none, 'undercurl', s:co4)
 
@@ -279,7 +279,7 @@ call s:Hl('ALEError', s:none, s:none, 'undercurl', s:co0)
 call s:Hl('ALEErrorSign', s:co0, s:bg1)
 call s:Hl('ALEWarning', s:none, s:none, 'undercurl', s:co2)
 call s:Hl('ALEWarningSign', s:co2, s:bg1)
-call s:Hl('ALEInfo', s:none, s:none, 'italic')
+call s:Hl('ALEInfo', s:none, s:none)
 call s:Hl('ALEInfoSign', s:co4, s:bg1)
 
 " }}}
