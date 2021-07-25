@@ -90,11 +90,11 @@ let s:d1 = '#3f3831'
 let s:d0 = '#241f1a'
 
 " color
-let s:co0 = '#a74646' " red
+let s:co0 = '#a44646' " red
 let s:co1 = '#b19146' " green
-let s:co2 = '#c27e4d' " yellow
+let s:co2 = '#be7b41' " yellow
 let s:co3 = '#6e897d' " blue
-let s:co4 = '#bb6350' " magenta
+let s:co4 = '#a56455' " magenta
 let s:co5 = '#769b75' " cyan
 
 if &background == 'light'

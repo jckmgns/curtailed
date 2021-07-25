@@ -36,11 +36,11 @@ correctly without further configuration.
 
 ### Dark mode
 
-![Screenshot of dark mode](https://i.imgur.com/0oySuqt.png)
+![Screenshot of dark mode](https://i.imgur.com/ClqoJ76.png)
 
 ### Light mode
 
-![Screenshot of light mode](https://i.imgur.com/HHx9krf.png)
+![Screenshot of light mode](https://i.imgur.com/PVzrCG1.png)
 
 ## Palette
 
@@ -49,11 +49,11 @@ to be used in other contexts; as part of a terminal prompt for example.
 
 ### Dark mode
 
-![Palette for dark mode](https://i.imgur.com/ExpX3FO.png)
+![Palette for dark mode](https://i.imgur.com/20j9auZ.png)
 
 ### Light mode
 
-![Palette for light mode](https://i.imgur.com/NG8LI8u.png)
+![Palette for light mode](https://i.imgur.com/KFbtOv0.png)
 
 ## License
 
