@@ -1,12 +1,12 @@
 " --------------------------------
 " Name: Curtailed
 " Description: Warm color scheme with a limited palette
-" Author: Jack Magnus <jack.magnus@jadomag.com>
+" Author: Jack Magnus <jack@2c2d2e.com>
 " Source: https://github.com/jadomag/curtailed
 " License: BSD-2-Clause-Patent
 " --------------------------------
 
-" Support code
+" Utility functions
 " --------------------------------
 
 " Initialization: {{{
@@ -77,25 +77,33 @@ endfunction
 " Palette: {{{
 
 " light
-let s:l0 = '#f5e7cf'
-let s:l1 = '#e2d5bf'
-let s:l2 = '#c1b5a2'
+let s:l0 = '#faebd7'
+let s:l1 = '#e1d3c1'
+let s:l2 = '#c8bcac'
 
 " gray
-let s:g0 = '#8d8375'
+let s:g0 = '#968d81'
 
 " dark
-let s:d2 = '#595148'
-let s:d1 = '#3f3831'
-let s:d0 = '#241f1a'
+let s:d2 = '#645e56'
+let s:d1 = '#4b4640'
+let s:d0 = '#322f2b'
 
 " color
 let s:co0 = '#a44646' " red
 let s:co1 = '#b19146' " green
-let s:co2 = '#be7b41' " yellow
-let s:co3 = '#6e897d' " blue
+let s:co2 = '#C68146' " yellow
+let s:co3 = '#648F80' " blue
 let s:co4 = '#a56455' " magenta
-let s:co5 = '#769b75' " cyan
+let s:co5 = '#6EA279' " cyan
+
+" color
+let s:co0 = '#BB4B48' " red
+let s:co1 = '#A49041' " green
+let s:co2 = '#D09217' " yellow
+let s:co3 = '#60907F' " blue
+let s:co4 = '#B66F80' " magenta
+let s:co5 = '#6FA17A' " cyan
 
 if &background == 'light'
   let s:bg0 = s:l0
@@ -185,7 +193,7 @@ call s:Hl('SpecialKey', s:none, s:bg1)
 " }}}
 " Variable types: {{{
 
-call s:Hl('Constant', s:co2, s:none)
+call s:Hl('Constant', s:co4, s:none)
 call s:Li('Character', 'Constant')
 call s:Li('Boolean', 'Constant')
 
@@ -204,32 +212,31 @@ call s:Li('Function', 'Identifier')
 call s:Hl('Comment', s:fg1, s:none)
 call s:Li('SpecialComment', 'Comment')
 
-call s:Hl('Operator', s:fg0, s:none)
+call s:Hl('Operator', s:fg0, s:none, 'bold')
 
 call s:Hl('Statement', s:co0, s:none)
 call s:Li('Conditional', 'Statement')
-call s:Li('Repeat', 'Statement')
-call s:Li('Label', 'Statement')
-call s:Li('Keyword', 'Statement')
 call s:Li('Exception', 'Statement')
+call s:Li('Keyword', 'Statement')
+call s:Li('Label', 'Statement')
+call s:Li('Repeat', 'Statement')
+call s:Li('Structure', 'Statement')
 call s:Li('Tag', 'Statement')
 
-
-call s:Hl('Special', s:co4, s:none)
-call s:Li('SpecialChar', 'Special')
-call s:Li('Delimiter', 'Special')
+call s:Hl('Special', s:co0, s:none)
 call s:Li('Debug', 'Special')
+call s:Li('Delimiter', 'Special')
+call s:Li('SpecialChar', 'Special')
 call s:Li('StorageClass', 'Special')
 
-call s:Hl('PreProc', s:fg0, s:none)
-call s:Li('Include', 'PreProc')
+call s:Hl('PreProc', s:co3, s:none)
 call s:Li('Define', 'PreProc')
+call s:Li('Include', 'PreProc')
 call s:Li('Macro', 'PreProc')
 call s:Li('PreCondit', 'PreProc')
+call s:Li('Typedef', 'PreProc')
 
 call s:Hl('Type', s:co2, s:none)
-call s:Li('Structure', 'Type')
-call s:Li('Typedef', 'Type')
 
 " }}}
 " Diff: {{{
@@ -243,7 +250,7 @@ call s:Hl('DiffText', s:bg0, s:co2)
 " Completion menu: {{{
 
 call s:Hl('Pmenu', s:fg0, s:bg1)
-call s:Hl('PmenuSel', s:bg1, s:co4)
+call s:Hl('PmenuSel', s:bg1, s:co3)
 call s:Hl('PmenuSbar', s:none, s:bg1)
 call s:Hl('PmenuThumb', s:none, s:bg2)
 
@@ -303,6 +310,17 @@ call s:Hl('GitGutterChangeDelete', s:co0, s:bg1)
 " Filetype definitions
 " --------------------------------
 
+" C: {{{
+
+call s:Li('cTypedef', 'Typedef')
+
+" }}}
+" Java: {{{
+
+call s:Hl('javaDocTags', s:co3, s:none)
+call s:Hl('javaDocParam', s:fg0, s:none)
+
+" }}}
 " Javascript: {{{
 
 call s:Li('javaScriptBraces', 'Normal')
