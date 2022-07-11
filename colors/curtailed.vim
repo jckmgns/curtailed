@@ -78,24 +78,16 @@ endfunction
 
 " light
 let s:l0 = '#faebd7'
-let s:l1 = '#e1d3c1'
-let s:l2 = '#c8bcac'
+let s:l1 = '#E0D1BE'
+let s:l2 = '#C6B8A5'
 
 " gray
-let s:g0 = '#968d81'
+let s:g0 = '#928573'
 
 " dark
-let s:d2 = '#645e56'
-let s:d1 = '#4b4640'
-let s:d0 = '#322f2b'
-
-" color
-let s:co0 = '#a44646' " red
-let s:co1 = '#b19146' " green
-let s:co2 = '#C68146' " yellow
-let s:co3 = '#648F80' " blue
-let s:co4 = '#a56455' " magenta
-let s:co5 = '#6EA279' " cyan
+let s:d2 = '#5E5342'
+let s:d1 = '#443A29'
+let s:d0 = '#2a2010'
 
 " color
 let s:co0 = '#BB4B48' " red
